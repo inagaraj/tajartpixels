@@ -52,3 +52,41 @@ section.we-create {
     transition: 0.2s ease-in;
     border: 1px solid #00b1f1;
 }
+.owl-carousel::after {
+    background: url(./../img/rope.png);
+    content: "";
+    display: block;
+    height: 10px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    width: 100%;
+}
+.owl-item {
+    padding-top: 45px !important;
+}
+.idy_gallery_item {
+    background: #583e43;
+    border-radius: 10px;
+    margin: 0 5px;
+    padding: 5px;
+   
+    z-index: 2;
+}
+.idy_gallery_item::before {
+    background-image: url(./../img/clip.png);
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 11px;
+    width: 30px;
+    z-index: 1;
+}
+.owl-carousel .owl-item img{
+    border-radius: 5px;
+    
+}
